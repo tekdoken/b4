@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+nhập vào số Năm<input id="a" type="text" oninput="t()"> <br>
+<p id="cv"></p>
+<script>
+    function t() {
+        let a = document.getElementById("a").value
+        document.getElementById("cv").innerHTML = "Thế kỷ: " + (Math.floor(a / 100) +1);
+    }
+</script>
+</body>
+</html>
