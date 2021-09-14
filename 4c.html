@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+nhập vào số a<input id="a" type="text" oninput="t()"> <br>
+nhập vào số b<input id="b" type="text" oninput="t()"> <br>
+<p id="cv"></p>
+<script>
+    function t() {
+        let a = +document.getElementById('a').value;
+        let b = +document.getElementById('b').value;
+        if(b>=a) {
+            document.getElementById("cv").innerHTML = "Tổng các số từ  đến b là:" + (a + b) * ((b - a) + 1) / 2;
+        }else{
+            document.getElementById("cv").innerHTML = "Tổng các số từ b đến a là:" + (a + b) * ((a - b) + 1) / 2;
+        }
+    }
+</script>
+</body>
+</html>
