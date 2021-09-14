@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="a" type="text">
+<p id="cv"></p>
+<button onclick="cv()">tính chu vi hình vuông</button>
+<button onclick="dt()">tính diện tích hình vuông</button>
+<script>
+    function cv() {
+        let a = document.getElementById('a').value;
+        let s = (a * 4)
+        document.getElementById("cv").innerHTML = (s);
+    }
+
+    function dt() {
+        let a = document.getElementById('a').value;
+        let s = (a ** 2)
+        document.getElementById("cv").innerHTML = (s)
+    }</script>
+</body>
+</html>
