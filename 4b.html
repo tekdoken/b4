@@ -5,14 +5,16 @@
     <title>Title</title>
 </head>
 <body>
-<input id="a" type="text">
+nhập vào số a<input id="a" type="text"> <br>
+nhập vào số b<input id="b" type="text"> <br>
 <p id="cv"></p>
-<button onclick="cv()">ngũ 2</button>
-<button onclick="dt()">nhân</button>
+<button onclick="dt()">ngũ 2</button>
+<button onclick="cv()">a^b</button>
 <script>
     function cv() {
         let a = document.getElementById('a').value;
-        let s = (a * 4)
+        let b = document.getElementById('b').value;
+        let s = (a ** b)
         document.getElementById("cv").innerHTML = (s);
     }
 
