@@ -13,7 +13,7 @@ nhập vào số b<input id="b" type="text" oninput="t()"> <br>
         let a = +document.getElementById('a').value;
         let b = +document.getElementById('b').value;
         if(b>=a) {
-            document.getElementById("cv").innerHTML = "Tổng các số từ  đến b là:" + (a + b) * ((b - a) + 1) / 2;
+            document.getElementById("cv").innerHTML = "Tổng các số từ a đến b là:" + (a + b) * ((b - a) + 1) / 2;
         }else{
             document.getElementById("cv").innerHTML = "Tổng các số từ b đến a là:" + (a + b) * ((a - b) + 1) / 2;
         }
